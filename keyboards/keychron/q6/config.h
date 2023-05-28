@@ -51,6 +51,11 @@
 #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS // Sets the default brightness value, if none has been set
 #define RGB_MATRIX_TIMEOUT 900001 // number of milliseconds to wait until rgb automatically turns off
 #define RGB_MATRIX_DEFAULT_SPD 24 // Sets the default animation speed, if none has been set
+
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
+#define PERMISSIVE_HOLD
+
 // RGB Matrix Animation modes. Explicitly enabled
 // For full list of effects, see:
 // https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-effects
