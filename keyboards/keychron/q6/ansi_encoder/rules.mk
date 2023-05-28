@@ -17,11 +17,17 @@ RGB_MATRIX_ENABLE = yes
 =======
 RGB_MATRIX_DRIVER = CKLED2001
 RGB_MATRIX_CUSTOM_USER = yes
+<<<<<<< HEAD
 >>>>>>> 6d0a5d7b69 (broken?)
+=======
+DYNAMIC_MACRO_ENABLE = yes
+MOUSEKEY_ENABLE = yes
+>>>>>>> 4419f8344e (VIA Off, DIABLO Layer)
 LTO_ENABLE = yes
 EEPROM_DRIVER = wear_leveling
 WEAR_LEVELING_DRIVER = embedded_flash
-
+TAP_DANCE_ENABLE = no
+CUSTOM_TAP_DANCE = no
 # Enter lower-power sleep mode when on the ChibiOS idle thread
 OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
 
