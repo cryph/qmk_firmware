@@ -13,20 +13,9 @@ AUDIO_ENABLE = no           # Audio output
 ENCODER_ENABLE = yes        # Enable Encoder
 DIP_SWITCH_ENABLE = yes
 RGB_MATRIX_ENABLE = yes
-<<<<<<< HEAD
-=======
-RGB_MATRIX_DRIVER = CKLED2001
 RGB_MATRIX_CUSTOM_USER = yes
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6d0a5d7b69 (broken?)
-=======
 DYNAMIC_MACRO_ENABLE = yes
-=======
-DYNAMIC_MACRO_ENABLE = no
->>>>>>> af3bf50bb6 (D4 Ready)
 MOUSEKEY_ENABLE = yes
->>>>>>> 4419f8344e (VIA Off, DIABLO Layer)
 LTO_ENABLE = yes
 EEPROM_DRIVER = wear_leveling
 WEAR_LEVELING_DRIVER = embedded_flash
