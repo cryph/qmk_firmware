@@ -9,6 +9,7 @@
     },
     "rgb_matrix": {
         "animations": {
+            "solid_color": true,
             "breathing": true,
             "band_spiral_val": true,
             "cycle_all": true,
@@ -26,11 +27,21 @@
             "typing_heatmap": true,
             "digital_rain": true,
             "solid_reactive_simple": true,
+            "solid_reactive_wide": true,			
             "solid_reactive_multiwide": true,
+            "solid_reactive_cross": true,
+            "solid_reactive_multicross": true,
+            "solid_reactive_nexus": true,			
             "solid_reactive_multinexus": true,
+            "solid_reactive_splash": true,
+            "solid_reactive_multisplash": true,			
             "splash": true,
             "solid_splash": true
         },
+        "speed":"42",
+        "hue": "202",
+        "sat": "255",
+        "timeout": 900001,
         "driver": "snled27351",
         "sleep": true
     }
