@@ -33,3 +33,6 @@
 
 /* Enable NUM_LOCK_LED_INDEX */
 #define NUM_LOCK_LED_INDEX 37
+
+/* Enable Kinetic Mouse Mode */
+#define MK_KINETIC_SPEED

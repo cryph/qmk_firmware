@@ -25,8 +25,14 @@ enum layers{
   WIN_FN
 };
 
-//Tap Dance Declarations
-enum {
+//Tap Dance and Macro Declarations
+
+enum custom_keycodes {
+    LBMACRO1 = SAFE_RANGE,
+    LBMACRO2,
+};
+
+enum macro_keycodes {
   TD_MUTE_PLAY = 0
 };
 
@@ -43,10 +49,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
-enum custom_keycodes {
-    LBMACRO1 = SAFE_RANGE,
-    LBMACRO2,
-};
+
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
@@ -115,8 +118,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,    _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
         RM_TOGG,  RM_NEXT,  RM_VALU,  RM_HUEU,  RM_SATU,  RM_SPDU,  _______,  _______,  _______,  _______,  _______,  _______,  _______,    _______,  _______,  _______,  _______,  _______,  _______,  _______,
         _______,  RM_PREV,  RM_VALD,  RM_HUED,  RM_SATD,  RM_SPDD,  _______,  _______,  _______,  _______,  _______,  _______,              _______,                                _______,  _______,  _______,  _______,
-        _______,            _______,  _______,  _______,  _______,  _______,  NK_TOGG,  _______,  _______,  _______,  _______,              _______,            _______,            _______,  _______,  _______,
-        _______,  _______,  _______,                                _______,                                _______,  _______,  _______,    _______,  _______,  _______,  _______,  _______,            _______,  _______),
+        _______,            _______,  _______,  _______,  _______,  _______,  NK_TOGG,  _______,  _______,  _______,  _______,              _______,            KC_MS_U,            _______,  _______,  _______,
+        _______,  0x700b,  _______,                                _______,                                _______,  KC_BTN1,  _______,    _______,  KC_MS_L,  KC_MS_D,  KC_MS_R,  _______,            _______,  _______),
 };
 
 #if defined(ENCODER_MAP_ENABLE)
