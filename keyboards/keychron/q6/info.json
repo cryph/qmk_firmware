@@ -38,9 +38,12 @@
             "splash": true,
             "solid_splash": true
         },
-        "speed":"42",
-        "hue": "202",
-        "sat": "255",
+		"default": {
+	      "animation": "solid_reactive_wide",
+          "speed": 42,
+          "hue": 202,
+          "sat": 255,
+		},
         "timeout": 900001,
         "driver": "snled27351",
         "sleep": true
