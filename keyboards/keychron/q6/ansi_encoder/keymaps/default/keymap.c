@@ -63,7 +63,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             SEND_STRING("timer 1 period 199\n");
             SEND_STRING(SS_DELAY(50));
             SEND_STRING("save\n");
-            SEND_STRING(SS_DELAY(25));
+            SEND_STRING(SS_DELAY(50));
             SEND_STRING("exit\n");
         } } else {
             // when keycode LBMACRO1 is released
@@ -80,7 +80,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             SEND_STRING("timer 1 period 0\n");
             SEND_STRING(SS_DELAY(50));
             SEND_STRING("save\n");
-            SEND_STRING(SS_DELAY(25));
+            SEND_STRING(SS_DELAY(50));
             SEND_STRING("exit\n");
         } } else {
             // when keycode LBMACRO2 is released
